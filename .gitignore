@@ -2,3 +2,4 @@ node_modules
 .vscode
 /dist/main.js
 
+/node_modules/
