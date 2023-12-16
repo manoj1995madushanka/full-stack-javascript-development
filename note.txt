@@ -1,0 +1,79 @@
+Add dependency only for development
+    npm i -D eslint prettier
+
+Compile ts file
+    npx tsc src/server.server.ts
+
+Run compiled js file
+    node src/server/server.ts
+
+Run app
+    npm run dev:server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
