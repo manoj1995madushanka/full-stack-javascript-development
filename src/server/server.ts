@@ -22,7 +22,7 @@ server.set("view engine", "ejs");
 
 server.use("/page", (req, res) => {
     res.render("index", {
-        content: "Ejs JS embed",
+        initialContent: "Loading...",
     });
 })
 

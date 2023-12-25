@@ -9,6 +9,7 @@ Run compiled js file
 
 Run app
     npm run dev:server
+    npm run dev:bundler
 
 Start docker
     docker-compose up
@@ -16,6 +17,12 @@ Start docker
 For load test data
     npx tsnd src/dev/load-test-data.ts
 
+WEBPACK
+    webpack takes multiple JS files and then bundle them into single file or a few files, if we want to configure it that way
+
+install webpack
+    npm i webpack webpack-cli
+    npm i ts-loader
 
 
 
