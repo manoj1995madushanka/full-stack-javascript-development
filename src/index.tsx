@@ -2,9 +2,17 @@ import {createRoot} from "react-dom/client";
 
 const TODOS = ["Learn React", "Build Something"]
 
+const Header = (props) => {
+    return <div className="header">{props.message}</div>
+}
+
 const App = () => {
     return (
-        <div>
+        <div className="container">
+            <Header message="Naming Contests"/>
+        </div>
+
+        /*<div>
             <div style={{color: "green"}} className="container" title="Hello React">
                 <h1>Hello React</h1>
             </div>
@@ -12,7 +20,7 @@ const App = () => {
             {TODOS.map((element) => {
                 return <li>{element}</li>
             })}
-        </div>
+        </div>*/
     )
 };
 
