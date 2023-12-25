@@ -1,34 +1,23 @@
-// @ts-ignore
 import express from "express";
-// @ts-ignore
-import os from "os";
-import config from "./config";
-import Config from "./config";
-console.log(config);
+import os from "node:os";
 
-//console.log(express);
+import config from "./config";
 
 const server = express();
 
-// render any static asses
-//server.use(express.static("dist"))
+server.use(express.static("dist"));
 
-/*server.use("/", (req,res)=>{
-    res.send("Hello Express")
-})*/
-
-// use to render html content
 server.set("view engine", "ejs");
 
-server.use("/page", (req, res) => {
+server.use("/", (req, res) => {
     res.render("index", {
         initialContent: "Loading...",
     });
-})
+});
 
-server.listen(config.PORT, config.HOST, () => {
-    console.info(
-        `Express server is listening at ${config.SERVER_URL}`,
-        `Free Mem: ${os.freemem() / 1024 / 1024}`
+server.listen(Number(config.PORT), config.HOST, () => {
+    console.log(
+        `Express is listening at ${config.SERVER_URL}`,
+        `Free Mem: ${os.freemem() / 1024 / 1024}`,
     );
 });

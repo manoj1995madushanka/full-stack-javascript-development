@@ -32,7 +32,7 @@ I want to continue with the construction/building theme as well as the mind/brai
       id: "educating-people-about-sustainable-food-production",
       categoryName: "Magazine/Newsletter",
       contestName:
-        "Educating people about sustainable food production",
+          "Educating people about sustainable food production",
       description: `
 Educating people about sustainable food production
       `,
