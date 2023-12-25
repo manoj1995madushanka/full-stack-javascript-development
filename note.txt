@@ -10,8 +10,11 @@ Run compiled js file
 Run app
     npm run dev:server
 
+Start docker
+    docker-compose up
 
-
+For load test data
+    npx tsnd src/dev/load-test-data.ts
 
 
 
