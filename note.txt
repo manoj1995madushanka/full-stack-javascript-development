@@ -24,6 +24,8 @@ install webpack
     npm i webpack webpack-cli
     npm i ts-loader
 
+react-dom npm package used to render a react component into a browser
+
 
 
 
