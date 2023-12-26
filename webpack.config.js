@@ -1,3 +1,7 @@
+// below line equal to import statement in typescript
+// typescript internally convert import statements to below line
+const webpack = require("webpack");
+
 module.exports = {
   entry: "./src/index.tsx",
   resolve: {
@@ -14,4 +18,10 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+      new webpack.EnvironmentPlugin({
+        HOST:"0.0.0.0",
+        PORT:"8080"
+      })
+  ]
 };
