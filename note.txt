@@ -26,6 +26,9 @@ install webpack
 
 react-dom npm package used to render a react component into a browser
 
+Load DB data
+    npx tsnd sc/dev/load-test-data.ts
+
 
 
 
